@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #0d0202, #403e3e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+h2, p {
+    color: whitesmoke;
+    font-weight: 500;
+    opacity: 0.8 ;
+}
+
+h3 {
+    color: red;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 10%;
+    right: 10%;
+}
+
+.circle2 {
+    bottom: 10%;
+    left: 10%;
+}
+
+#batman-logo {
+    height: 8rem;
+    width: 8rem;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 2rem;
+}
+
+.link {
+    
+    display: flex;
+    margin: 1rem 0rem;
+    padding: .2rem, .8rem;
+    align-items: center;
+    
+
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.pro {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.pro img {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.pro h2 {
+    width: 60%;
+    color: black   ;
+    font-weight: 600;
+}
+
+
+
+.games {
+    flex: 2;
+}
+
+/* Games */
+
+
+.status {
+    margin-bottom: 0.8rem;
+}
+
+.status input {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border: none;
+    width:  50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.games {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.7);
+    justify-content: space-between;
+}
+
+.card h2, .card p {
+    color: black;
+}
+
+.card h2 {
+    text-size-adjust: 8px;
+}
+
+.progress {
+    background: linear-gradient(to right bottom, black, grey    );
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.progress::after{
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:gray;
+    position: absolute;
+    left: 60%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, black, gray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card img {
+    width: 18%;
+}
